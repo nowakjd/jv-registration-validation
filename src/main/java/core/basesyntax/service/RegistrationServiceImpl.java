@@ -47,7 +47,7 @@ public class RegistrationServiceImpl implements RegistrationService {
         }
         if (user.getAge() < MIN_AGE) {
             throw new InvalidDataException(
-                    "Age is below minimum age(" + MIN_AGE + ")"
+                    "Not valid age: " + user.getAge() + ". Min allowed age is " + MIN_AGE
             );
         }
         if (storageDao.get(user.getLogin()) != null) {

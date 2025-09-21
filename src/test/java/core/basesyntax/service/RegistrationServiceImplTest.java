@@ -24,7 +24,7 @@ class RegistrationServiceImplTest {
     private static final int EDGE_AGE = 18;
     private static final int AGE_UNDER_18 = 17;
     private static final int NEGATIVE_AGE = -2;
-    private static final String SHORT_LOGIN = "user";
+    private static final String SHORT_LOGIN = "user1";
 
     private final RegistrationService registrationService =
             new RegistrationServiceImpl(new StorageDaoImpl());
